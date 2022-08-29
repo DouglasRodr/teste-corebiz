@@ -77,6 +77,4 @@ export const AsideContent = styled.div`
   justify-content: flex-end;
 
   grid-area: column-3;
-
-  background-color: green;
 `;
