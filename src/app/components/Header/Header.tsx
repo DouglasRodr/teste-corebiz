@@ -7,7 +7,9 @@ export default function Header() {
   return (
     <H.Wrapper>
       <H.Container>
-        <MenuButton />
+        <H.MenuButtonContainer>
+          <MenuButton />
+        </H.MenuButtonContainer>
         <Logo />
         <H.SearchInput>
           <span>Search</span>

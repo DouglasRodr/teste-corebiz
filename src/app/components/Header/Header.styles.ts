@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Wrapper as MenuButton } from "../MenuButton/MenuButton.styles";
 import { Wrapper as Logo } from "../Logo/Logo.styles";
 
 export const Wrapper = styled.div`
@@ -34,16 +33,6 @@ export const Container = styled.div`
     grid-template-areas: "column-1 column-2 column-3";
   }
 
-  ${MenuButton} {
-    justify-content: flex-start;
-
-    grid-area: column-1;
-
-    @media (min-width: 1024px) {
-      display: none;
-    }
-  }
-
   ${Logo} {
     grid-area: column-2;
 
@@ -52,6 +41,19 @@ export const Container = styled.div`
 
       grid-area: column-1;
     }
+  }
+`;
+
+export const MenuButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  grid-area: column-1;
+
+  @media (min-width: 1024px) {
+    display: none;
   }
 `;
 
