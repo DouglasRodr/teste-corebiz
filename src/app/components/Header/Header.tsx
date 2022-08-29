@@ -1,12 +1,13 @@
+import MenuButton from "../MenuButton";
 import * as H from "./Header.styles";
 
 export default function Header() {
   return (
     <H.Wrapper>
       <H.Container>
-        <H.MenuButton>
-          <span>MenuButton</span>
-        </H.MenuButton>
+        <H.MenuButtonContainer>
+          <MenuButton />
+        </H.MenuButtonContainer>
         <H.Logo>
           <span>Logo</span>
         </H.Logo>

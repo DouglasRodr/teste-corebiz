@@ -33,7 +33,7 @@ export const Container = styled.div`
   }
 `;
 
-export const MenuButton = styled.div`
+export const MenuButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,8 +44,6 @@ export const MenuButton = styled.div`
   @media (min-width: 1024px) {
     display: none;
   }
-
-  background-color: pink;
 `;
 
 export const Logo = styled.div`
