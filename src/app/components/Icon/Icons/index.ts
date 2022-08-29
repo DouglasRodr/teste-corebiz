@@ -1,7 +1,8 @@
 import IconMenu from "./IconMenu";
+import IconUser from "./IconUser";
 import { IconColor } from "..";
 
-export { IconMenu };
+export { IconMenu, IconUser };
 
 export interface IconProps {
   color: IconColor;
