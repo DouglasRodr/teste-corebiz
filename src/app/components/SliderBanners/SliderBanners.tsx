@@ -1,7 +1,7 @@
 import { SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import * as S from "./SliderBanners.styles";
-import Banner from "../../components/Banner";
+import Banner from "../Banner";
 import banner from "../../assets/banner.jpg";
 import bannerMobile from "../../assets/banner-mobile.jpg";
 

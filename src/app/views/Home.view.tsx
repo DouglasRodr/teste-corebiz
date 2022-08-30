@@ -1,6 +1,6 @@
 import usePageTitle from "../../core/hooks/usePageTitle";
-import SliderBanners from "../features/SliderBanners/SliderBanners";
-import SliderBestSellers from "../features/SliderBestSellers";
+import SliderBanners from "../components/SliderBanners/SliderBanners";
+import SliderBestSellers from "../components/SliderBestSellers";
 import DefaultLayout from "../layout";
 
 export default function HomeView() {
