@@ -1,4 +1,32 @@
 import styled from "styled-components";
+import Button from "../Button";
+
+export const Details = styled.div`
+  height: 136px;
+
+  @media (min-width: 1024px) {
+    height: 160px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 4px;
+
+  background-color: #fff;
+
+  padding: 14px 8px;
+`;
+
+export const BuyButton = styled(Button)`
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 128px;
+  }
+`;
 
 export const Wrapper = styled.div`
   width: 144px;
@@ -8,13 +36,29 @@ export const Wrapper = styled.div`
 
   background-color: #fff;
 
-  &:hover {
-    cursor: pointer;
+  ${BuyButton} {
+    opacity: 1;
   }
 
   @media (min-width: 1024px) {
     width: 216px;
     height: 360px;
+
+    ${BuyButton} {
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    ${Details} {
+      background-color: #e6e8ea;
+    }
+
+    ${BuyButton} {
+      opacity: 1;
+    }
   }
 `;
 
@@ -57,29 +101,19 @@ export const Tag = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const ImageWrapper = styled.div`
   width: 136px;
-  height: 136px;
-
-  object-fit: cover;
+  height: 128px;
 
   @media (min-width: 1024px) {
     width: 216px;
-    height: 216px;
+    height: 200px;
   }
-`;
 
-export const Details = styled.div`
-  height: 144px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: #fff;
-
-  padding: 8px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const Title = styled.h3`
@@ -100,7 +134,7 @@ export const RatingWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  height: 16px;
+  height: 20px;
 `;
 
 export const ListPriceWrapper = styled.div`
@@ -168,15 +202,5 @@ export const InstallmentsWrapper = styled.div`
     color: #7a7a7a;
 
     margin: 0;
-  }
-`;
-
-export const BuyButton = styled.button`
-  width: 100%;
-  height: 36px;
-
-  @media (min-width: 1024px) {
-    width: 128px;
-    height: 32px;
   }
 `;

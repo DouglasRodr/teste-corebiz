@@ -15,7 +15,9 @@ export default function ProductCard({ product }: ProductCardProps) {
           <span>OFF</span>
         </P.Tag>
       )}
-      <P.Image src={product.imageUrl} alt={product.productName} />
+      <P.ImageWrapper>
+        <img src={product.imageUrl} alt={product.productName} />
+      </P.ImageWrapper>
       <P.Details>
         <P.Title>{product.productName}</P.Title>
         <P.RatingWrapper>
@@ -36,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             }x de ${formatToCurrency(product.installments[0].value)}`}</span>
           )}
         </P.InstallmentsWrapper>
-        <P.BuyButton>Comprar</P.BuyButton>
+        <P.BuyButton label="Comprar" type="button" size="small" />
       </P.Details>
     </P.Wrapper>
   );
