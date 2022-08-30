@@ -3,6 +3,7 @@ import { Cart, Product } from "../@types";
 
 interface ShippingCartContext {
   cartItems: Cart.Item[];
+  cartQuantity: number;
   addToCart: (product: Product.Summary) => void;
 }
 

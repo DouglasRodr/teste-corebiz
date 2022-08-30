@@ -15,6 +15,8 @@ export default function ShoppingCartProvider({
     []
   );
 
+  const cartQuantity = cartItems.length;
+
   function addToCart(product: Product.Summary) {
     setCartItems((items) => {
       if (items.find((item) => item.id === product.productId) == null) {
@@ -42,6 +44,7 @@ export default function ShoppingCartProvider({
     <ShoppingCartContext.Provider
       value={{
         cartItems,
+        cartQuantity,
         addToCart,
       }}
     >

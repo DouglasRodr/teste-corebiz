@@ -3,7 +3,7 @@ import Icon from "../Icon";
 import * as S from "./ShoppingCartButton.styles";
 
 export default function ShoppingCartButton() {
-  const { cartItems } = useShoppingCart();
+  const { cartQuantity } = useShoppingCart();
 
   function handleClick() {
     console.log("Shopping Cart Button Clicado");
@@ -12,9 +12,7 @@ export default function ShoppingCartButton() {
   return (
     <S.Wrapper onClick={handleClick}>
       <Icon icon="cart" color="black" />
-      {cartItems && cartItems.length > 0 && (
-        <S.ItemCount>{cartItems.length}</S.ItemCount>
-      )}
+      {cartQuantity > 0 && <S.ItemCount>{cartQuantity}</S.ItemCount>}
     </S.Wrapper>
   );
 }
