@@ -79,4 +79,10 @@ export const AsideContent = styled.div`
   justify-content: flex-end;
 
   grid-area: column-3;
+
+  gap: 8px;
+
+  @media (min-width: 1024px) {
+    gap: 24px;
+  }
 `;

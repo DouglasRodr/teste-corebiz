@@ -1,6 +1,7 @@
 import Logo from "../Logo";
 import MenuButton from "../MenuButton";
 import MyAccountButton from "../MyAccountButton";
+import ShoppingCartButton from "../ShoppingCartButton";
 import * as H from "./Header.styles";
 
 export default function Header() {
@@ -16,6 +17,7 @@ export default function Header() {
         </H.SearchInput>
         <H.AsideContent>
           <MyAccountButton />
+          <ShoppingCartButton />
         </H.AsideContent>
       </H.Container>
     </H.Wrapper>
