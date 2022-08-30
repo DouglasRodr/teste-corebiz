@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Wrapper as Logo } from "../Logo/Logo.styles";
+import { Wrapper as SearchInput } from "../SearchInput/SearchInput.styles";
 
 export const Wrapper = styled.div`
   height: 80px;
@@ -21,7 +22,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 25% 1fr 25%;
   grid-auto-rows: 28px;
-  grid-gap: 4px;
+  grid-gap: 8px;
   grid-template-areas:
     " column-1 column-2 column-3 "
     " column-4 column-4 column-4";
@@ -42,6 +43,14 @@ export const Container = styled.div`
       grid-area: column-1;
     }
   }
+
+  ${SearchInput} {
+    grid-area: column-4;
+
+    @media (min-width: 1024px) {
+      grid-area: column-2;
+    }
+  }
 `;
 
 export const MenuButtonContainer = styled.div`
@@ -57,7 +66,7 @@ export const MenuButtonContainer = styled.div`
   }
 `;
 
-export const SearchInput = styled.div`
+export const SearchInput2 = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,7 +89,7 @@ export const AsideContent = styled.div`
 
   grid-area: column-3;
 
-  gap: 8px;
+  gap: 16px;
 
   @media (min-width: 1024px) {
     gap: 24px;

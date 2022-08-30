@@ -1,6 +1,7 @@
 import Logo from "../Logo";
 import MenuButton from "../MenuButton";
 import MyAccountButton from "../MyAccountButton";
+import SearchInput from "../SearchInput";
 import ShoppingCartButton from "../ShoppingCartButton";
 import * as H from "./Header.styles";
 
@@ -12,9 +13,7 @@ export default function Header() {
           <MenuButton />
         </H.MenuButtonContainer>
         <Logo />
-        <H.SearchInput>
-          <span>Search</span>
-        </H.SearchInput>
+        <SearchInput />
         <H.AsideContent>
           <MyAccountButton />
           <ShoppingCartButton />
