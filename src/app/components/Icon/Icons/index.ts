@@ -1,6 +1,7 @@
 import IconArrowLeft from "./IconArrowLeft";
 import IconArrowRight from "./IconArrowRight";
 import IconCart from "./IconCart";
+import IconClose from "./IconClose";
 import IconHeadset from "./IconHeadset";
 import IconMail from "./IconMail";
 import IconMenu from "./IconMenu";
@@ -12,6 +13,7 @@ export {
   IconArrowLeft,
   IconArrowRight,
   IconCart,
+  IconClose,
   IconHeadset,
   IconMail,
   IconMenu,

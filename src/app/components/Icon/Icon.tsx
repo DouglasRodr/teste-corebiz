@@ -1,5 +1,14 @@
 import { IconColor, IconType } from ".";
-import { IconArrowLeft, IconArrowRight, IconCart, IconMail, IconMenu, IconSearch, IconUser } from "./Icons";
+import {
+  IconArrowLeft,
+  IconArrowRight,
+  IconCart,
+  IconClose,
+  IconMail,
+  IconMenu,
+  IconSearch,
+  IconUser,
+} from "./Icons";
 import * as I from "./Icon.styles";
 import IconHeadset from "./Icons/IconHeadset";
 
@@ -14,6 +23,7 @@ const getIcon = (color: IconColor, width?: number, height?: number) => ({
   arrowLeft: <IconArrowLeft width={width} height={height} color={color} />,
   arrowRight: <IconArrowRight width={width} height={height} color={color} />,
   cart: <IconCart width={width} height={height} color={color} />,
+  close: <IconClose width={width} height={height} color={color} />,
   headset: <IconHeadset width={width} height={height} color={color} />,
   mail: <IconMail width={width} height={height} color={color} />,
   menu: <IconMenu width={width} height={height} color={color} />,

@@ -5,6 +5,7 @@ export type IconType =
   | "arrowLeft"
   | "arrowRight"
   | "cart"
+  | "close"
   | "headset"
   | "mail"
   | "menu"
