@@ -52,7 +52,7 @@ export const Location = styled.div`
 
   span {
     display: block;
-    
+
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -70,6 +70,7 @@ export const Contact = styled.div`
 export const Realization = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 
   width: 200px;
