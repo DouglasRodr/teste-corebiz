@@ -1,5 +1,6 @@
 import usePageTitle from "../../core/hooks/usePageTitle";
 import SliderBanners from "../features/SliderBanners/SliderBanners";
+import SliderBestSellers from "../features/SliderBestSellers";
 import DefaultLayout from "../layout";
 
 export default function HomeView() {
@@ -8,6 +9,7 @@ export default function HomeView() {
   return (
     <DefaultLayout>
       <SliderBanners />
+      <SliderBestSellers />
     </DefaultLayout>
   );
 }
