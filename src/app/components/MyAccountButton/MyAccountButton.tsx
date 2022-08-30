@@ -10,12 +10,12 @@ export default function MyAccountButton({
   showLabel = "desktopOnly",
   label = "Minha Conta",
 }: MyAccountButtonProps) {
-  function handleMyAccountClick() {
+  function handleClick() {
     console.log("MyAccount Clicado");
   }
 
   return (
-    <M.Wrapper showLabel={showLabel} onClick={handleMyAccountClick}>
+    <M.Wrapper showLabel={showLabel} onClick={handleClick}>
       <Icon icon="user" color="black" />
       <span>{label}</span>
     </M.Wrapper>
