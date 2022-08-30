@@ -11,6 +11,8 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
+    justify-content: flex-start;
+
     img {
       height: 40px;
     }

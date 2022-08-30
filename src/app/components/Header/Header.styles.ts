@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Logo from "../Logo";
 
 export const Wrapper = styled.div`
   height: 80px;
@@ -32,12 +31,10 @@ export const Container = styled.div`
   }
 `;
 
-export const HeaderLogo = styled(Logo)`
+export const LogoContainer = styled.div`
   grid-area: column-2;
 
   @media (min-width: 1024px) {
-    justify-content: flex-start;
-
     grid-area: column-1;
   }
 `;

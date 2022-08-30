@@ -1,3 +1,4 @@
+import Logo from "../Logo";
 import MenuButton from "../MenuButton";
 import MyAccountButton from "../MyAccountButton";
 import SearchInput from "../SearchInput";
@@ -11,7 +12,9 @@ export default function Header() {
         <H.MenuButtonContainer>
           <MenuButton />
         </H.MenuButtonContainer>
-        <H.HeaderLogo />
+        <H.LogoContainer>
+          <Logo />
+        </H.LogoContainer>
         <H.SearchInputContainer>
           <SearchInput />
         </H.SearchInputContainer>
