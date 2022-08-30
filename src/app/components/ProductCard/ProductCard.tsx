@@ -1,4 +1,5 @@
 import { Product } from "../../../service/@types";
+import StarsRating from "../StarsRating";
 import * as P from "./ProductCard.styles";
 
 export interface ProductCardProps {
@@ -17,7 +18,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <P.Details>
         <P.Title>{product.productName}</P.Title>
         <P.RatingWrapper>
-          <span>*****</span>
+          <StarsRating rating={product.stars} />
         </P.RatingWrapper>
         <P.ListPriceWrapper>
           {product.listPrice && <span>{`de ${product.listPrice}`}</span>}
