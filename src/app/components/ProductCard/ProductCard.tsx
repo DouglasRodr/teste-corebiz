@@ -1,3 +1,4 @@
+import formatToCurrency from "../../../core/utils/formatToCurrency";
 import { Product } from "../../../service/@types";
 import StarsRating from "../StarsRating";
 import * as P from "./ProductCard.styles";
@@ -21,14 +22,18 @@ export default function ProductCard({ product }: ProductCardProps) {
           <StarsRating rating={product.stars} />
         </P.RatingWrapper>
         <P.ListPriceWrapper>
-          {product.listPrice && <span>{`de ${product.listPrice}`}</span>}
+          {product.listPrice && (
+            <span>{`de ${formatToCurrency(product.listPrice)}`}</span>
+          )}
         </P.ListPriceWrapper>
         <P.PriceWrapper>
-          <span>{`por ${product.price}`}</span>
+          <span>{`por ${formatToCurrency(product.price)}`}</span>
         </P.PriceWrapper>
         <P.InstallmentsWrapper>
           {product.installments && product.installments.length > 0 && (
-            <span>{`ou em ${product.installments[0].quantity}x de ${product.installments[0].value}`}</span>
+            <span>{`ou em ${
+              product.installments[0].quantity
+            }x de ${formatToCurrency(product.installments[0].value)}`}</span>
           )}
         </P.InstallmentsWrapper>
         <P.BuyButton>Comprar</P.BuyButton>
