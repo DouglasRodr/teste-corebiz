@@ -4,20 +4,23 @@ import Button from "../Button";
 export const Details = styled.div`
   height: 136px;
 
-  @media (min-width: 1024px) {
-    height: 160px;
-  }
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  gap: 4px;
+  gap: 2px;
 
   background-color: #fff;
 
-  padding: 14px 8px;
+  padding: 4px 0 0;
+
+  @media (min-width: 1024px) {
+    height: 160px;
+    padding: 8px 8px;
+
+    gap: 4px;
+  }
 `;
 
 export const BuyButton = styled(Button)`
@@ -52,12 +55,14 @@ export const Wrapper = styled.div`
   &:hover {
     cursor: pointer;
 
-    ${Details} {
-      background-color: #e6e8ea;
-    }
-
     ${BuyButton} {
       opacity: 1;
+    }
+
+    @media (min-width: 1024px) {
+      ${Details} {
+        background-color: #e6e8ea;
+      }
     }
   }
 `;
@@ -102,30 +107,40 @@ export const Tag = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 136px;
+  width: 100%;
   height: 128px;
 
   @media (min-width: 1024px) {
-    width: 216px;
     height: 200px;
   }
 
   img {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 `;
 
 export const Title = styled.h3`
+  min-height: 24px;
+
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 10px;
+  line-height: 14px;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   color: #7a7a7a;
 
   margin: 0;
+
+  @media (min-width: 1024px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
 `;
 
 export const RatingWrapper = styled.div`
@@ -149,21 +164,25 @@ export const ListPriceWrapper = styled.div`
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 11px;
     text-align: center;
-
     text-decoration: line-through;
 
     color: #7a7a7a;
 
     margin: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 `;
 
 export const PriceWrapper = styled.div`
   margin: 0;
-  height: 24px;
+  height: 22px;
 
   display: flex;
   flex-direction: column;
@@ -173,13 +192,18 @@ export const PriceWrapper = styled.div`
   span {
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
 
     color: #000;
 
     margin: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 `;
 
@@ -195,12 +219,17 @@ export const InstallmentsWrapper = styled.div`
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 11px;
     text-align: center;
 
     color: #7a7a7a;
 
     margin: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 `;
