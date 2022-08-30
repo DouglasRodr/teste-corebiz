@@ -1,4 +1,5 @@
 import usePageTitle from "../../core/hooks/usePageTitle";
+import SliderBanners from "../features/SliderBanners/SliderBanners";
 import DefaultLayout from "../layout";
 
 export default function HomeView() {
@@ -6,7 +7,7 @@ export default function HomeView() {
 
   return (
     <DefaultLayout>
-      <h1>Home</h1>
+      <SliderBanners />
     </DefaultLayout>
   );
 }

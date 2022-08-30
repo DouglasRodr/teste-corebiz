@@ -11,4 +11,13 @@ export default createGlobalStyle`
     body {
         height: 100vh;
     }
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        background-color: #bdbdbd;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #f8475f;
+    }
 `;
