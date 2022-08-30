@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     justify-content: flex-start;
 
     img {
-      height: 40px;
+      height: 38px;
     }
   }
 `;
