@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Wrapper as Logo } from "../Logo/Logo.styles";
-import { Wrapper as SearchInput } from "../SearchInput/SearchInput.styles";
+import Logo from "../Logo";
 
 export const Wrapper = styled.div`
   height: 80px;
@@ -31,23 +30,29 @@ export const Container = styled.div`
     grid-template-columns: 302px 1fr 184px;
     grid-template-areas: "column-1 column-2 column-3";
   }
+`;
 
-  ${Logo} {
-    grid-area: column-2;
+export const HeaderLogo = styled(Logo)`
+  grid-area: column-2;
 
-    @media (min-width: 1024px) {
-      justify-content: flex-start;
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
 
-      grid-area: column-1;
-    }
+    grid-area: column-1;
   }
+`;
 
-  ${SearchInput} {
-    grid-area: column-4;
+export const SearchInputContainer = styled.div`
+  width: 100%;
 
-    @media (min-width: 1024px) {
-      grid-area: column-2;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  grid-area: column-4;
+
+  @media (min-width: 1024px) {
+    grid-area: column-2;
   }
 `;
 
@@ -62,21 +67,6 @@ export const MenuButtonContainer = styled.div`
   @media (min-width: 1024px) {
     display: none;
   }
-`;
-
-export const SearchInput2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  grid-area: column-4;
-
-  @media (min-width: 1024px) {
-    grid-area: column-2;
-  }
-
-  background-color: orange;
 `;
 
 export const AsideContent = styled.div`
