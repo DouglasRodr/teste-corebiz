@@ -13,7 +13,7 @@ export const Wrapper = styled.footer`
 
 export const Container = styled.div`
   width: 100%;
-  
+
   max-width: 1240px;
   height: 100%;
   margin: 0 auto;
@@ -53,14 +53,42 @@ export const Contact = styled.div`
 export const Realization = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
-  width: 100%;
+  width: 200px;
   height: 48px;
 
   @media (min-width: 992px) {
     width: 296px;
     justify-content: flex-end;
+
+    gap: 24px;
   }
 
-  background-color: green;
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+  }
+`;
+
+export const LogoCorebiz = styled.a`
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: #fff;
+`;
+
+export const LogoVtex = styled.a`
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: #fff;
+
+  img {
+    width: 64px;
+  }
 `;
