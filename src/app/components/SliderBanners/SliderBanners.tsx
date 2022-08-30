@@ -17,9 +17,9 @@ export default function SliderBanners() {
       }}
       modules={[Pagination]}
     >
-      {[...Array(4)].map(() => {
+      {[...Array(4)].map((_, index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <Banner
               imageDesktop={banner}
               imageMobile={bannerMobile}

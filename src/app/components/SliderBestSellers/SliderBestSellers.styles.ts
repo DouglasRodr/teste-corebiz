@@ -40,6 +40,11 @@ export const Slider = styled(Swiper)`
     display: none;
   }
 
+  .swiper-button-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
   @media (min-width: 1024px) {
     padding: 0 32px;
 
@@ -51,5 +56,39 @@ export const Slider = styled(Swiper)`
     .swiper-button-next {
       display: block;
     }
+  }
+`;
+
+export const NextButton = styled.div`
+  display: none;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const PreviousButton = styled.div`
+  display: none;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
