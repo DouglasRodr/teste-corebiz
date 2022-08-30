@@ -1,4 +1,4 @@
-import { Product } from "../@types/Product";
+import { Product } from "../../core/@types";
 import Service from "../Service";
 
 export default class ProductService extends Service {

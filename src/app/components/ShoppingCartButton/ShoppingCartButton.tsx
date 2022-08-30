@@ -1,8 +1,9 @@
+import { useShoppingCart } from "../../../core/hooks/useShoppingCart";
 import Icon from "../Icon";
 import * as S from "./ShoppingCartButton.styles";
 
 export default function ShoppingCartButton() {
-  const count = 1;
+  const { cartItems } = useShoppingCart();
 
   function handleClick() {
     console.log("Shopping Cart Button Clicado");
@@ -11,7 +12,9 @@ export default function ShoppingCartButton() {
   return (
     <S.Wrapper onClick={handleClick}>
       <Icon icon="cart" color="black" />
-      <S.ItemCount>{count}</S.ItemCount>
+      {cartItems && cartItems.length > 0 && (
+        <S.ItemCount>{cartItems.length}</S.ItemCount>
+      )}
     </S.Wrapper>
   );
 }

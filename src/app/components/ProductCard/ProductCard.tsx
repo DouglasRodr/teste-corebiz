@@ -1,5 +1,6 @@
+import { Product } from "../../../core/@types";
+import { useShoppingCart } from "../../../core/hooks/useShoppingCart";
 import formatToCurrency from "../../../core/utils/formatToCurrency";
-import { Product } from "../../../service/@types";
 import StarsRating from "../StarsRating";
 import * as P from "./ProductCard.styles";
 
@@ -8,6 +9,8 @@ export interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const { addToCart } = useShoppingCart();
+
   return (
     <P.Wrapper>
       {product.listPrice && (
@@ -38,7 +41,14 @@ export default function ProductCard({ product }: ProductCardProps) {
             }x de ${formatToCurrency(product.installments[0].value)}`}</span>
           )}
         </P.InstallmentsWrapper>
-        <P.BuyButton label="Comprar" type="button" size="small" />
+        <P.BuyButton
+          label="Comprar"
+          type="button"
+          size="small"
+          onClick={() => {
+            addToCart(product);
+          }}
+        />
       </P.Details>
     </P.Wrapper>
   );

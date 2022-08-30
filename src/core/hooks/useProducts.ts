@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { ProductService } from "../../service";
-import { Product } from "../../service/@types";
+import { Product } from "../@types";
 
 export default function useProducts() {
   const [loading, setLoading] = useState(false);

@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 export const ItemCount = styled.p`
   position: absolute;
 
-  top: 0;
+  top: -2px;
   left: 10px;
 
   font-family: "Nunito", "sans-serif";
