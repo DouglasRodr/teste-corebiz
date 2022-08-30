@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./app";
 import "./core/imports.css";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import GlobalStyles from "./core/globalStyles";
 import reportWebVitals from "./reportWebVitals";

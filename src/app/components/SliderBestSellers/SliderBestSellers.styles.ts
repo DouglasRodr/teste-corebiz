@@ -16,13 +16,40 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  height: 100%;
 
   padding: 8px 16px;
 `;
 
 export const Slider = styled(Swiper)`
-  width: 100%;
   height: 100%;
-  display: inline-grid;
+  padding: 0;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullets {
+    position: relative;
+    bottom: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 32px;
+
+    .swiper-pagination-bullets {
+      display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+    }
+  }
 `;

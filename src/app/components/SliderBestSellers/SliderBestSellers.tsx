@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import useProducts from "../../../core/hooks/useProducts";
 import SectionTitle from "../SectionTitle";
 import * as S from "./SliderBestSellers.styles";
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { SwiperSlide } from "swiper/react";
 import ProductCard from "../ProductCard";
 
@@ -22,15 +22,30 @@ export default function SliderBestSellers() {
             <p>Loading...</p>
           ) : (
             <S.Slider
-              pagination={{ clickable: true }}
-              autoplay={{
-                delay: 3000,
-                pauseOnMouseEnter: true,
-                disableOnInteraction: false,
+              pagination={{
+                clickable: true,
               }}
-              modules={[Pagination]}
-              slidesPerView={4}
-              slidesPerGroup={4}
+              navigation={true}
+              modules={[Navigation, Pagination]}
+              slidesPerView={2}
+              slidesPerGroup={2}
+              spaceBetween={24}
+              centeredSlidesBounds={true}
+              breakpoints={{
+                512: {
+                  slidesPerView: 3,
+                  slidesPerGroup: 3,
+                },
+                680: {
+                  slidesPerView: 4,
+                  slidesPerGroup: 4,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  slidesPerGroup: 4,
+                  spaceBetween: 12,
+                },
+              }}
             >
               {products?.map((product) => {
                 return (
