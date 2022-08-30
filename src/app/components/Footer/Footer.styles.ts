@@ -24,8 +24,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (min-width: 992px) {
-    padding: 24px 32px;
+  @media (min-width: 1024px) {
+    padding: 24px 16px;
 
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +40,7 @@ export const Info = styled.div`
   width: 100%;
   height: 160px;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     width: 296px;
   }
 `;
@@ -75,7 +75,7 @@ export const Realization = styled.div`
   width: 200px;
   height: 48px;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     width: 296px;
     justify-content: flex-end;
 
