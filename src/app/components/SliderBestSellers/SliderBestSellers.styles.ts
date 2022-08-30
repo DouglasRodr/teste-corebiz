@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Swiper } from "swiper/react";
 
 export const Wrapper = styled.div`
   margin: 24px 0 32px 0;
@@ -18,4 +19,10 @@ export const Container = styled.div`
   height: 100%;
 
   padding: 8px 16px;
+`;
+
+export const Slider = styled(Swiper)`
+  width: 100%;
+  height: 100%;
+  display: inline-grid;
 `;
