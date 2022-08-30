@@ -33,14 +33,31 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
   width: 100%;
   height: 160px;
 
   @media (min-width: 992px) {
     width: 296px;
   }
+`;
 
-  background-color: red;
+export const Location = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  span {
+    display: block;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+  }
 `;
 
 export const Contact = styled.div`

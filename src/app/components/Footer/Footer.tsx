@@ -1,13 +1,20 @@
 import * as F from "./Footer.styles";
 import logoCorebiz from "../../assets/logo-footer-corebiz.svg";
 import logoVtex from "../../assets/logo-footer-vtex.svg";
+import SectionTitle from "../SectionTitle";
 
 export default function Footer() {
   return (
     <F.Wrapper>
       <F.Container>
         <F.Info>
-          <span>Info</span>
+          <SectionTitle text="Localização" variant="secondary" />
+          <F.Location>
+            <span>Avenida Andrômeda, 2000. Bloco 6 e 8</span>
+            <span>Alphavile SP</span>
+            <span>brasil@corebiz.ag</span>
+            <span>+55 11 3090 1039</span>
+          </F.Location>
         </F.Info>
         <F.Contact>
           <span>Contact</span>
