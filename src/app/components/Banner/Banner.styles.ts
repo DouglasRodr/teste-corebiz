@@ -15,6 +15,8 @@ export const Wrapper = styled.div<{
 
   color: #fff;
 
+  cursor: default;
+
   @media (min-width: 576px) and (max-width: 1024px) {
     height: 304px;
   }
