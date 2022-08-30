@@ -2,8 +2,8 @@ import { IconProps } from ".";
 
 export default function IconUser({
   color,
-  width = 23,
-  height = 16,
+  width = 18,
+  height = 18,
 }: IconProps) {
   return (
     <svg
