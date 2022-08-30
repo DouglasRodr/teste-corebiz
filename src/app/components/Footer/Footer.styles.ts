@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "../Button";
 
 export const Wrapper = styled.footer`
   background-color: #000;
@@ -64,7 +65,23 @@ export const Contact = styled.div`
   width: 200px;
   height: 100px;
 
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const ContactButton = styled(Button)`
+  justify-content: flex-start;
+
+  width: 100%;
+
+  line-height: 12px;
+
+  padding-right: 28px;
 `;
 
 export const Realization = styled.div`
