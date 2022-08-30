@@ -1,5 +1,5 @@
 import { IconColor, IconType } from ".";
-import { IconCart, IconMenu, IconUser } from "./Icons";
+import { IconCart, IconMenu, IconSearch, IconUser } from "./Icons";
 import * as I from "./Icon.styles";
 
 export interface IconProps {
@@ -12,6 +12,7 @@ export interface IconProps {
 const getIcon = (color: IconColor, width?: number, height?: number) => ({
   cart: <IconCart width={width} height={height} color={color} />,
   menu: <IconMenu width={width} height={height} color={color} />,
+  search: <IconSearch width={width} height={height} color={color} />,
   user: <IconUser width={width} height={height} color={color} />,
 });
 

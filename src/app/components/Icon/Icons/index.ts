@@ -1,9 +1,10 @@
 import IconCart from "./IconCart";
 import IconMenu from "./IconMenu";
+import IconSearch from "./IconSearch";
 import IconUser from "./IconUser";
 import { IconColor } from "..";
 
-export { IconMenu, IconUser, IconCart };
+export { IconCart, IconMenu, IconSearch, IconUser };
 
 export interface IconProps {
   color: IconColor;
