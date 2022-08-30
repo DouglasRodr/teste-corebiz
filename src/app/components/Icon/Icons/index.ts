@@ -1,3 +1,5 @@
+import IconArrowLeft from "./IconArrowLeft";
+import IconArrowRight from "./IconArrowRight";
 import IconCart from "./IconCart";
 import IconHeadset from "./IconHeadset";
 import IconMail from "./IconMail";
@@ -6,7 +8,16 @@ import IconSearch from "./IconSearch";
 import IconUser from "./IconUser";
 import { IconColor } from "..";
 
-export { IconCart, IconHeadset, IconMail, IconMenu, IconSearch, IconUser };
+export {
+  IconArrowLeft,
+  IconArrowRight,
+  IconCart,
+  IconHeadset,
+  IconMail,
+  IconMenu,
+  IconSearch,
+  IconUser,
+};
 
 export interface IconProps {
   color: IconColor;
