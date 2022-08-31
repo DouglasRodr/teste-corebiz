@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Swiper } from "swiper/react";
 
 export const Wrapper = styled.div`
-  margin: 32px 0 32px 0;
+  margin: 32px 0 64px 0;
 
   height: 336px;
 

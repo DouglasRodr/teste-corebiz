@@ -5,7 +5,6 @@ export const Wrapper = styled.section`
   width: 100%;
   min-height: 144px;
 
-  margin-top: 32px;
   padding: 28px 0 36px 0;
 
   background-color: #f2f2f2;
