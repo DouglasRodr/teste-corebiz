@@ -4,24 +4,32 @@ import { Swiper } from "swiper/react";
 export const Wrapper = styled.div`
   margin: 24px 0 32px 0;
 
-  height: 408px;
+  height: 336px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 1024px) {
+    height: 416px;
+  }
 `;
 
 export const Container = styled.div`
   width: 100%;
+  height: 100%;
   max-width: 1240px;
   margin: 0 auto;
 
-  padding: 8px 16px;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const Slider = styled(Swiper)`
-  height: 100%;
   padding: 0;
 
   .swiper-slide {
