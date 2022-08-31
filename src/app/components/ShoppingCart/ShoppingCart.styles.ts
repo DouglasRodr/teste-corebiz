@@ -116,6 +116,11 @@ export const Disclaimer = styled.span`
   line-height: 12px;
 
   text-align: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const CartTotal = styled.div`
@@ -132,6 +137,11 @@ export const TotalLabel = styled.span`
   font-weight: 900;
   font-size: 20px;
   line-height: 28px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const TotalValue = styled.span`
@@ -141,6 +151,11 @@ export const TotalValue = styled.span`
   font-weight: 900;
   font-size: 20px;
   line-height: 28px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const CheckoutButton = styled(Button)`
@@ -149,4 +164,9 @@ export const CheckoutButton = styled(Button)`
   text-transform: none;
 
   font-size: 14px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
