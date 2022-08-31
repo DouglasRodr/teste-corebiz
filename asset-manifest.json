@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/teste-corebiz/static/css/main.2b31ffc4.css",
-    "main.js": "/teste-corebiz/static/js/main.a3256e35.js",
+    "main.js": "/teste-corebiz/static/js/main.117d202b.js",
     "static/js/787.5986cc41.chunk.js": "/teste-corebiz/static/js/787.5986cc41.chunk.js",
     "static/media/banner.jpg": "/teste-corebiz/static/media/banner.fca6f1a45ec8cd2717c2.jpg",
     "static/media/banner-mobile.jpg": "/teste-corebiz/static/media/banner-mobile.fdf403f0b220ae312d32.jpg",
@@ -10,11 +10,11 @@
     "static/media/logo-footer-vtex.svg": "/teste-corebiz/static/media/logo-footer-vtex.2fbcbc49506f057f8e25d18524ddf212.svg",
     "index.html": "/teste-corebiz/index.html",
     "main.2b31ffc4.css.map": "/teste-corebiz/static/css/main.2b31ffc4.css.map",
-    "main.a3256e35.js.map": "/teste-corebiz/static/js/main.a3256e35.js.map",
+    "main.117d202b.js.map": "/teste-corebiz/static/js/main.117d202b.js.map",
     "787.5986cc41.chunk.js.map": "/teste-corebiz/static/js/787.5986cc41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b31ffc4.css",
-    "static/js/main.a3256e35.js"
+    "static/js/main.117d202b.js"
   ]
 }
