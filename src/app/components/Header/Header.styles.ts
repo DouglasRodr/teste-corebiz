@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  position: sticky;
+  top: 0;
   height: 80px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  z-index: 10;
+
+  background-color: #fff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 `;
 
 export const Container = styled.div`
