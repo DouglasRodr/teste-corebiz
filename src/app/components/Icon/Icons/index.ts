@@ -5,6 +5,8 @@ import IconClose from "./IconClose";
 import IconHeadset from "./IconHeadset";
 import IconMail from "./IconMail";
 import IconMenu from "./IconMenu";
+import IconMinus from "./IconMinus";
+import IconPlus from "./IconPlus";
 import IconRemove from "./IconRemove";
 import IconSearch from "./IconSearch";
 import IconUser from "./IconUser";
@@ -18,6 +20,8 @@ export {
   IconHeadset,
   IconMail,
   IconMenu,
+  IconMinus,
+  IconPlus,
   IconRemove,
   IconSearch,
   IconUser,
