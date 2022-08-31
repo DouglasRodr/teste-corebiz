@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -10,7 +10,7 @@ export const Background = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 99;
 `;
 
 export const Wrapper = styled.div<{ isOpen: boolean }>`
@@ -22,11 +22,11 @@ export const Wrapper = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   right: ${(p) => (p.isOpen ? 0 : "-100%")};
-  transition: ${(p) => (p.isOpen ? "350ms" : "850ms")};
+  transition: ${(p) => (p.isOpen ? "350ms" : "500ms")};
 
   padding: 16px;
 
-  z-index: 2;
+  z-index: 100;
 `;
 
 export const Header = styled.div`
@@ -50,13 +50,22 @@ export const CloseIcon = styled.div`
   cursor: pointer;
 `;
 
+export const Content = styled.div`
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+`;
+
 export const EmptyContent = styled.div`
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  height: 100%;
 
   gap: 16px;
 `;
