@@ -7,6 +7,8 @@ import { SwiperSlide } from "swiper/react";
 import ProductCard from "../ProductCard";
 import Icon from "../Icon";
 
+import "swiper/css/navigation";
+
 export default function SliderBestSellers() {
   const { fetchProducts, loading, products } = useProducts();
 
@@ -33,8 +35,8 @@ export default function SliderBestSellers() {
                 clickable: true,
               }}
               navigation={{
-                prevEl: navigationPrevRef.current!, // Assert non-null
-                nextEl: navigationNextRef.current!, // Assert non-null
+                prevEl: navigationPrevRef.current!,
+                nextEl: navigationNextRef.current!,
               }}
               autoplay={{
                 delay: 3000,
