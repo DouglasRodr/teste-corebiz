@@ -43,6 +43,8 @@ As seguintes ferramentas/tecnologias foram utilizadas no desenvolvimento do proj
 - **React Hook Form**
 - **SwiperJS**
 
+Você pode conferir o projeto aqui: <a href="https://douglasrodr-teste-corebiz.netlify.app/" target="_blank">Demo</a>
+
 ## 🚀 Executando o projeto
 
 ```bash
@@ -62,6 +64,21 @@ $ yarn start
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
+
+## 📸 Preview
+
+<h1 align="center">
+    <img alt="Imagem1" title="#Imagem1" src="https://raw.githubusercontent.com/DouglasRodr/teste-corebiz/main/images/projeto_1.png" />
+</h1>
+<h1 align="center">
+    <img alt="Imagem2" title="#Imagem2" src="https://raw.githubusercontent.com/DouglasRodr/teste-corebiz/main/images/projeto_2.png" />
+</h1>
+<h1 align="center">
+    <img alt="Imagem3" title="#Imagem3" src="https://raw.githubusercontent.com/DouglasRodr/teste-corebiz/main/images/projeto_3.png" />
+</h1>
+<h1 align="center">
+    <img alt="Imagem4" title="#Imagem4" src="https://raw.githubusercontent.com/DouglasRodr/teste-corebiz/main/images/projeto_4.png" />
+</h1>
 
 ## 🦸 Autor
 
