@@ -1,2 +1,3 @@
-export type { Product } from "../../core/@types/Product";
+export type { Product } from "./Product";
 export type { Cart } from "./Cart";
+export type { Newsletter } from "./Newsletter";
