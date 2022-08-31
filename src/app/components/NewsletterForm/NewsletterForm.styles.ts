@@ -81,6 +81,7 @@ export const NewsletterInput = styled.input<{
   font-size: 12px;
   line-height: 14px;
 
+  &:disabled,
   &:hover,
   &:active,
   &:focus {

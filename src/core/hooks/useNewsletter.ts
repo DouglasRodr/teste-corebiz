@@ -18,7 +18,7 @@ export default function useNewsletter() {
   },
   []);
 
-  const resetForm = function () {
+  const newSubscribe = function () {
     setSuccess(false);
   };
 
@@ -26,6 +26,6 @@ export default function useNewsletter() {
     loading,
     success,
     subscribeNewsletter,
-    resetForm
+    newSubscribe,
   };
 }

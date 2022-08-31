@@ -5,12 +5,14 @@ import useNewsletter from "../../../core/hooks/useNewsletter";
 import * as N from "./NewsletterForm.styles";
 
 export default function NewsletterForm() {
-  const { subscribeNewsletter, loading, success, resetForm } = useNewsletter();
+  const { subscribeNewsletter, loading, success, newSubscribe } =
+    useNewsletter();
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<Newsletter.Input>();
 
   function onFormSubmit(data: Newsletter.Input) {
@@ -34,6 +36,7 @@ export default function NewsletterForm() {
                     required: "Preencha com seu nome completo",
                   })}
                   isInvalid={!!errors.name}
+                  disabled={loading}
                 />
                 <N.ErrorMessage>{errors.name?.message}</N.ErrorMessage>
               </N.NewsletterInputGroup>
@@ -49,6 +52,7 @@ export default function NewsletterForm() {
                     },
                   })}
                   isInvalid={!!errors.email}
+                  disabled={loading}
                 />
                 <N.ErrorMessage>{errors.email?.message}</N.ErrorMessage>
               </N.NewsletterInputGroup>
@@ -71,7 +75,10 @@ export default function NewsletterForm() {
             <N.ResetFormButton
               label="Cadastrar novo e-mail"
               size="large"
-              onClick={resetForm}
+              onClick={() => {
+                reset();
+                newSubscribe();
+              }}
             />
           </N.SuccessContainer>
         )}
