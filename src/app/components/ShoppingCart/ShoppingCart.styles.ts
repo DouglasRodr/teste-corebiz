@@ -147,4 +147,6 @@ export const CheckoutButton = styled(Button)`
   width: 100%;
 
   text-transform: none;
+
+  font-size: 14px;
 `;
