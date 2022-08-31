@@ -89,16 +89,6 @@ export const Slider = styled(Swiper)`
     bottom: 0;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-
-  .swiper-button-disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
   @media (min-width: 1024px) {
     padding: 0 32px;
 
@@ -113,15 +103,15 @@ export const Slider = styled(Swiper)`
   }
 `;
 
-export const NextButton = styled.div`
+export const PreviousButton = styled.div`
   display: none;
   width: 36px;
   height: 36px;
   position: absolute;
   top: 50%;
-  right: 0;
-  cursor: pointer;
+  left: 0;
   z-index: 2;
+  cursor: pointer;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -130,15 +120,15 @@ export const NextButton = styled.div`
   }
 `;
 
-export const PreviousButton = styled.div`
+export const NextButton = styled.div`
   display: none;
   width: 36px;
   height: 36px;
   position: absolute;
   top: 50%;
-  left: 0;
-  cursor: pointer;
+  right: 0;
   z-index: 2;
+  cursor: pointer;
 
   @media (min-width: 1024px) {
     display: flex;
