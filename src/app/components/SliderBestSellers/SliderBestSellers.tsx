@@ -21,9 +21,12 @@ export default function SliderBestSellers() {
     <S.Wrapper>
       <S.Container>
         <SectionTitle text="Mais Vendidos" variant="primary" />
-        <div>
+        <S.Content>
           {loading ? (
-            <p>Loading...</p>
+            <S.LoadingWrapper>
+              <S.Loading />
+              <span>Carregando</span>
+            </S.LoadingWrapper>
           ) : (
             <S.Slider
               pagination={{
@@ -74,7 +77,7 @@ export default function SliderBestSellers() {
               </S.NextButton>
             </S.Slider>
           )}
-        </div>
+        </S.Content>
       </S.Container>
     </S.Wrapper>
   );

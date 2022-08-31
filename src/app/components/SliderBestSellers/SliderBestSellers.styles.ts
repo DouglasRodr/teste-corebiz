@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Swiper } from "swiper/react";
 
 export const Wrapper = styled.div`
@@ -27,6 +27,52 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+`;
+
+export const Content = styled.div`
+  height: 288px;
+
+  @media (min-width: 1024px) {
+    height: 360px;
+  }
+`;
+
+export const LoadingWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+
+  gap: 16px;
+
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #000;
+  }
+`;
+
+const Spinner = keyframes`  
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Loading = styled.div`
+  width: 24px;
+  height: 24px;
+  border: 4px solid #000;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: ${Spinner} 1s linear infinite;
 `;
 
 export const Slider = styled(Swiper)`
