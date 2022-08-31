@@ -9,6 +9,7 @@ export type IconType =
   | "headset"
   | "mail"
   | "menu"
+  | "remove"
   | "search"
   | "user";
 

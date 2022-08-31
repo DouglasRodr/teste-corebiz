@@ -6,6 +6,7 @@ import {
   IconClose,
   IconMail,
   IconMenu,
+  IconRemove,
   IconSearch,
   IconUser,
 } from "./Icons";
@@ -27,6 +28,7 @@ const getIcon = (color: IconColor, width?: number, height?: number) => ({
   headset: <IconHeadset width={width} height={height} color={color} />,
   mail: <IconMail width={width} height={height} color={color} />,
   menu: <IconMenu width={width} height={height} color={color} />,
+  remove: <IconRemove width={width} height={height} color={color} />,
   search: <IconSearch width={width} height={height} color={color} />,
   user: <IconUser width={width} height={height} color={color} />,
 });
