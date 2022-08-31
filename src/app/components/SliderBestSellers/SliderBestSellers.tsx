@@ -33,6 +33,11 @@ export default function SliderBestSellers() {
                 prevEl: navigationPrevRef.current!, // Assert non-null
                 nextEl: navigationNextRef.current!, // Assert non-null
               }}
+              autoplay={{
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+              }}
               modules={[Navigation, Pagination]}
               slidesPerView={2}
               slidesPerGroup={2}
