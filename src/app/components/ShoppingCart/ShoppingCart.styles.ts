@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "../Button";
 
 export const Background = styled.div`
   position: fixed;
@@ -24,8 +25,6 @@ export const Wrapper = styled.div<{ isOpen: boolean }>`
   right: ${(p) => (p.isOpen ? 0 : "-100%")};
   transition: ${(p) => (p.isOpen ? "350ms" : "500ms")};
 
-  padding: 16px;
-
   z-index: 100;
 `;
 
@@ -35,8 +34,7 @@ export const Header = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 
-  padding: 8px 0;
-  margin-bottom: 16px;
+  padding: 20px 16px 16px 16px;
 `;
 
 export const HeaderTitle = styled.h3`
@@ -52,11 +50,6 @@ export const CloseIcon = styled.div`
 
 export const Content = styled.div`
   height: 100%;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 8px;
 `;
 
 export const EmptyContent = styled.div`
@@ -68,4 +61,90 @@ export const EmptyContent = styled.div`
   justify-content: center;
 
   gap: 16px;
+`;
+
+export const CartItems = styled.div`
+  height: calc(100% - 176px);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  padding: 8px 4px 8px 16px;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #c0c0c0;
+  }
+`;
+
+export const Footer = styled.div`
+  height: 176px;
+  width: 100%;
+  padding: 16px;
+
+  position: absolute;
+
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  gap: 16px;
+`;
+
+export const Disclaimer = styled.span`
+  font-size: 12px;
+  line-height: 12px;
+
+  text-align: center;
+`;
+
+export const CartTotal = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const TotalLabel = styled.span`
+  text-align: left;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+`;
+
+export const TotalValue = styled.span`
+  text-align: right;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+`;
+
+export const CheckoutButton = styled(Button)`
+  width: 100%;
+
+  text-transform: none;
 `;

@@ -9,6 +9,7 @@ interface ShippingCartContext {
   closeCart: () => void;
   cartItems: Cart.Item[];
   cartQuantity: number;
+  totalValue: number;
   isEmpty: boolean;
   addToCart: (product: Product.Summary) => void;
   removeFromCart: (product: Product.Summary) => void;
@@ -34,6 +35,11 @@ export default function ShoppingCartProvider({
   const [cartItems, setCartItems] = useLocalStorage<Cart.Item[]>(
     "cart-items",
     []
+  );
+
+  const totalValue = cartItems.reduce(
+    (value, item) => item.quantity * item.product.price + value,
+    0
   );
 
   const cartQuantity = cartItems.length;
@@ -97,6 +103,7 @@ export default function ShoppingCartProvider({
         closeCart,
         cartItems,
         cartQuantity,
+        totalValue,
         isEmpty,
         addToCart,
         removeFromCart,

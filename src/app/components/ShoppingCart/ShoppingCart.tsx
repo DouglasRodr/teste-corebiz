@@ -1,12 +1,13 @@
 import { Fragment, useEffect } from "react";
 import { useShoppingCart } from "../../../core/hooks/useShoppingCart";
+import formatToCurrency from "../../../core/utils/formatToCurrency";
 import Icon from "../Icon";
 import SectionTitle from "../SectionTitle";
 import CartItem from "./CartItem";
 import * as S from "./ShoppingCart.styles";
 
 export default function ShoppingCart() {
-  const { isOpen, closeCart, isEmpty, cartItems } = useShoppingCart();
+  const { isOpen, closeCart, isEmpty, cartItems, totalValue } = useShoppingCart();
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -29,11 +30,21 @@ export default function ShoppingCart() {
               <span>Seu carrinho está vazio</span>
             </S.EmptyContent>
           ) : (
-            <Fragment>
-              {cartItems.map((cartItem) => {
-                return <CartItem key={cartItem.id} cartItem={cartItem} />;
-              })}
-            </Fragment>
+            <>
+              <S.CartItems>
+                {cartItems.map((cartItem) => {
+                  return <CartItem key={cartItem.id} cartItem={cartItem} />;
+                })}
+              </S.CartItems>
+              <S.Footer>
+                <S.CartTotal>
+                  <S.TotalLabel>Total</S.TotalLabel>
+                  <S.TotalValue>{formatToCurrency(totalValue)}</S.TotalValue>
+                </S.CartTotal>
+                <S.Disclaimer>Taxas e Frete serão calculados no carrinho</S.Disclaimer>
+                <S.CheckoutButton label="Ir para o Checkout" size="large" />
+              </S.Footer>
+            </>
           )}
         </S.Content>
       </S.Wrapper>
