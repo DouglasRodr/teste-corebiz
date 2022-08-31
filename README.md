@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+<h1 align="center">
+    Teste Prático - Corebiz
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 Sobre o projeto
 
-## Available Scripts
+O Projeto consiste em desenvolver uma página utilizando HTML5, CSS3 e JS (React) baseando-se no Layout e APIs a seguir:
 
-In the project directory, you can run:
+- [Layout Figma](https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge)
+- [API](https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest)
 
-### `yarn start`
+### 📌 **Parte 1**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Use a API de produtos para pegar os dados dos produtos e
+construir a vitrine. (Pode usar o que achar melhor para isso. Ex: Axios, Fetch, XMLHttpRequest, etc)
+* Ao clicar no botão “Comprar” deve ser incrementada a quantidade de itens no
+carrinho.
+* Ao atualizar a página, a quantidade de produtos no carrinho deve ser
+preservada.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📌 **Parte 2**
+* Crie validações para o form de contato. (Ex: se o e-mail for
+inválido ou o nome vazio)
+* Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a
+API de newsletter seguindo as especificações da API.
 
-### `yarn test`
+### 📝 **Etapas Desenvolvidas**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] Layout responsivo baseado no Figma;
+- [x] Adicionar Produtos ao Carrinho;
+- [x] Inscrição na Newsletter;
+- [x] Listar Produtos, Aumentar/Diminuir quantidades e remover produtos do Carrinho; **(Etapa Adicional)**
 
-### `yarn build`
+## 🛠 Tecnologias/Ferramentas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As seguintes ferramentas/tecnologias foram utilizadas no desenvolvimento do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Typescript**
+- **React**
+- **Styled Components**
+- **Axios**
+- **Context API**
+- **React Hook Form**
+- **SwiperJS**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Executando o projeto
 
-### `yarn eject`
+```bash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Clone este repositório
+$ git clone https://github.com/DouglasRodr/teste-corebiz.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd teste-corebiz
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instale as dependências com o gerenciador de dependências de sua preferência (npm, yarn)
+$ yarn install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
-## Learn More
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🦸 Autor
+
+Desenvolvido por Douglas Rodrigues 👋🏽 [Entre em contato!](https://www.linkedin.com/in/douglas-rodrigues-pnz/)
