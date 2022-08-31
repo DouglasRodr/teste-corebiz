@@ -42,7 +42,10 @@ export default function ShoppingCartProvider({
     0
   );
 
-  const cartQuantity = cartItems.length;
+  const cartQuantity = cartItems.reduce(
+    (value, item) => item.quantity + value,
+    0
+  );
 
   const isEmpty = cartQuantity <= 0;
 
