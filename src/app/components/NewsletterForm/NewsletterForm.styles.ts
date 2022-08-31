@@ -20,13 +20,19 @@ export const Wrapper = styled.section`
 `;
 
 export const Container = styled.div`
-  width: 288px;
+  width: 100%;
   margin: 0 auto;
+
+  padding: 0 16px;
 
   gap: 16px;
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 448px) {
+    width: 320px;
+  }
 
   @media (min-width: 992px) {
     width: 732px;
